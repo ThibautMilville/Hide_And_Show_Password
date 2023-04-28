@@ -9,8 +9,23 @@
 </head>
 <body>
   <div class="input-box">
-    <input type="password" placeholder="Password">
-    <img src="eye-close.png">
+    <input type="password" id="password" placeholder="Password">
+    <img src="eye-close.png" id="eyeicon">
   </div>
+  <script>
+    // GET ELEMENTS
+    let eyeicon = document.getElementById('eyeicon');
+    let password = document.getElementById('password');
+
+    eyeicon.onclick = function(){
+      if(password.type == 'password'){
+        password.setAttribute('type', 'text');
+        eyeicon.setAttribute('src', 'eye-open.png');
+      }else{
+        password.setAttribute('type', 'password');
+        eyeicon.setAttribute('src', 'eye-close.png');
+      }
+    }
+  </script>
 </body>
 </html>

@@ -32,4 +32,5 @@ body {
 .input-box img {
   width: 35px;
   cursor: pointer;
+  filter: hue-rotate(240deg);
 }
