@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: #250057;
+}
+
+/* CONTAINER */
+.input-box {
+  background: #fff;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 300px auto;
+}
